@@ -9,6 +9,7 @@ console.log(DolarDun)
 let users=['Hakan KORKMAZ','Hakan ÇALIŞKAN']
 
 console.log('<ul>')
+console.log('test')
 for (let i = 0; i < users.length; i++) {
     console.log('<li>'+users[i] +'</li>')
 }
