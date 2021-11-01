@@ -1,3 +1,4 @@
+/*
 let DolarDun=9.20;
 //DolarDun='Sakarya';
 let DolarBugun=9.30;
@@ -14,3 +15,5 @@ for (let i = 0; i < users.length; i++) {
     console.log('<li>'+users[i] +'</li>')
 }
 console.log('</ul>')
+
+*/
