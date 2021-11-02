@@ -25,8 +25,6 @@ function PrimeNumber(...PrimeNumbers) { // Ödev 1
             }
         
         }
-  
-    // console.log(PrNumbers)
 
  
 });
