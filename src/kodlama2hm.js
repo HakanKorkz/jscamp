@@ -1,3 +1,4 @@
+
 //ASAL SAYI PROBLEM
 const isPrime = num => {            //const=sabit (kısa fonk kullanma) //
     if (num < 2) return false
