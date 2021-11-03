@@ -1,65 +1,53 @@
+const isPrime = num => {
+    for (var i = 2; i < num; i++)
+        if (num % i === 0) return false;
+
+    return num > 1
+}
+
+function PrimeNumber(...numbers) { // Ödev 1
+    console.log("Dizideki en büyük sayı: " + Math.max(...numbers))
+    
+    console.log("Dizideki en küçük sayı: " + Math.min(...numbers))
+
+    numbers.forEach(number => {
+        console.log(isPrime(number) ? `${number} sayısı asal.` : `${number} sayısı asal değil.`)
+    });
+
+    return true;
+}
 
 
-function PrimeNumber(...PrimeNumbers) { // Ödev 1
+const checkPerfectNumber = num => {
+    if ( num === 1 ) return false;
 
-    console.log("Dizi de ki en büyük sayı: "+Math.max(...PrimeNumbers[0]))
+    let sum = 1;
 
-    console.log("Dizi de ki en küçük sayı: "+Math.min(...PrimeNumbers[0]))
-
-    let count=PrimeNumbers[0].length;
-
-    PrimeNumbers.forEach(PrNumbers => {
-
-
-        for (let i = 0; i < count; i++) {
-
-            if(count%i==0) {
-
-                console.log("Asal Sayı değil: "+PrNumbers[i])
-
-            } else {
-
-                console.log("Asal Sayı: "+PrNumbers[i])
-
-
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+           sum = sum + i + num / i;
+            if (sum > num) {
+                return false;
             }
-        
         }
-
- 
-});
-
-   
-}
-
-
-let numbers=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-PrimeNumber(numbers)
-/*
-
-let inputSay=document.getElementById("sayi")
-inputSay.addEventListener("submit",(inputValue)=>{
-
-    if(isNaN(inputValue.key) && inputValue.key!="," && inputValue.key!="enter") {
-
-        inputValue.preventDefault()
-        return false
-      
-    } else {
-    PrimeNumber(inputValue.key)  
     }
-    
 
-
-    
-
-})
-
-function primeNumber(...numbers) {
-    numbers[0].forEach(numb => console.log(numb))
+    return sum === num;
 }
 
-const numbs = [3, 50, 69, 80, 90, 36, 1, 7, 6]
-primeNumber(numbs)
+function checkPerfectNumbers(maxNum) {
+    let perfectNumbers = [];
+    for (var i = 1; i < maxNum; i++) {
+        if (checkPerfectNumber(i))
+            perfectNumbers = [...perfectNumbers, i]
+    }
+    console.log(`Mükemmel sayılar: ${perfectNumbers}`)
+}
 
-*/
+
+//let numbers=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+PrimeNumber(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 30,24)
+
+checkPerfectNumbers(1000)
+
+console.log("------------")

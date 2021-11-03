@@ -2,7 +2,7 @@
 function addToCart(quantity,productName="Elma") {
 console.log('sepete eklendi: ' + productName+ ' Adet: '+quantity + ' Ürün')
 }
-
+//ben buradayım
 
 addToCart()
 addToCart('Kahve')
