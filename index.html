@@ -1,12 +1,30 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>JavaScript</title>
-    <script src="node_modules/traceur/bin/traceur.js"></script>
-    <script src="node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script>
-  </head>
-  <body>
-     <script>
-          System.import('src/kodlama3hm.js');
-      </script> 
-  </body>
+
+<head>
+  <title>JavaScript</title>
+  <script src="node_modules/traceur/bin/traceur.js"></script>
+  <script src="node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script>
+  <link rel="stylesheet" href="src/css/custom.css">
+</head>
+<body > 
+  <h3 class="h3-Background">KODLAMA.IO</h3>
+  <p class="p-color-orange">Parametre olarak girilen iki sayının arkadaş sayılar olup olmadığını bulan programı yazınız?</p>
+ <form action="" novalidate id="deger">
+    <label for="syi1">Sayı 1</label>
+    <input type="text" id="sayi1">
+    <label for="syi2">Sayı 2</label>
+    <input type="text" id="sayi2">
+    <input type="submit" value="Gönder">
+</form>
+<div id="text">
+
+
+
+</div>
+  <script>
+    System.import('src/js/dostsayi.js');
+  </script>
+</body>
+
 </html>
