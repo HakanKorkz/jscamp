@@ -29,5 +29,5 @@ findNumbers(0, 1, 2, 5, 9, 15, 36, 30, 24)
 
 console.log('1 den bin\'e kadar asal sayı örnekleri')
 
-//Numbers()
+Numbers()
 

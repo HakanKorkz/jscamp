@@ -1,4 +1,3 @@
-
 const dostsayi = (s1, s2) => {
     const number1 = s1
     const number2 = s2
@@ -20,16 +19,6 @@ const dostsayi = (s1, s2) => {
     return (total1 == s2 && total2 == s1) ? `${s1} ve ${s2}  Arkadaş sayısı!` : `${s1} ve ${s2} Arkadaş değildir!`
 
 }
-
-
-//console.log(dostsayi(number1,number2))
-
-
-
-
-
-
-
 
 
 const deger = document.getElementById('deger')   //değer oluşturarak id elementini seçiyoruz
